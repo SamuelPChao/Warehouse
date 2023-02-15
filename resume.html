@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Endless Dreamer</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="stylesheet" href="resume.css">
+    </head>
+    <body>
+        <div id="app">
+            <div class="layout">
+                <div class="fixed-up">
+                    <nav class="navbar">                
+                        <div class="navbarMiniContainer">
+                            <div class="dropdown">
+                                <button onclick="toggleMenu()" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                </button>
+                                <a class="miniLogo" href="resume.html">Endless Dreamer</a>
+                            </div>
+                            <div id="dropDownMenu" class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <a class="dropdown-item" href="resume.html">簡歷</a>
+                                <a class="dropdown-item" href="works.html">作品</a>
+                                <a class="dropdown-item" href="life.html">生活</a>
+                            </div>
+                        </div>
+                        <div class="navbarFullContainer">
+                            <div class="navbarLogo">
+                                <a class="navarLogoText" href="resume.html">Endless Dreamer</a>
+                            </div>
+                            <div class="navbarContent">
+                                <a class="navLink" href="resume.html">簡歷</a>
+                                <a class="navLink" href="works.html">作品</a>
+                                <a class="navLink" href="life.html">生活</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="WorkMain">
+                    <a class="WorkMainText">主頁</a>
+                </div>
+            </div>
+        </div>
+        <script>
+            function toggleMenu(){
+                let menu = document.getElementById("dropDownMenu");
+                menu.classList.toggle("dropdownBlock")
+            }
+        </script>
+    </body>
+</html>
