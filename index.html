@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Endless Dreamer</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="app">
+            <div class="layout">
+                <div class="fixed-up">
+                    <nav class="navbar">                
+                        <div class="navbarMiniContainer">
+                            <div class="dropdown">
+                                <button onclick="toggleMenu()" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                </button>
+                                <a class="miniLogo" href="index.html">Endless Dreamer</a>
+                            </div>
+                            <div id="dropDownMenu" class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <a class="dropdown-item" href="works.html">作品</a>
+                                <a class="dropdown-item" href="life.html">生活</a>
+                            </div>
+                        </div>
+                        <div class="navbarFullContainer">
+                            <div class="navbarLogo">
+                                <a class="navarLogoText" href="index.html">Endless Dreamer</a>
+                            </div>
+                            <div class="navbarContent">
+                                <a class="navLink" href="works.html">作品</a>
+                                <a class="navLink" href="life.html">生活</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="IndexMain">
+                    <div class="IndexMainProfile">
+                        <img class="IndexMainPhoto" src="https://lh3.googleusercontent.com/DqOFdvuw_8icAAYil-NHjgCPl6uNBullxS-oJ3dA6NKlOP-1F9MNYLeSB0_9415xiUpksQcVIkiE9t4A-Tmu6IvUicB-BuBHQYpqKhTHSF5xrL-w_UVAZynJ0phLxrndRw7AsO2qcg=w2400">
+                        <div class="IndexMainContent">
+                            <p class="IndexMainText">
+                                Hi,我是趙世平
+                            </p>
+                            <p class="IndexMainText">
+                                影像/前端開發工作者
+                            </p>
+                            <p class="IndexMainText">
+                                0932-391-449
+                            </p>
+                            <p class="IndexMainText">
+                                samchaoss@gmail.com
+                            </p>
+                            <p class="IndexMainText">
+                                106 台北市樂業街155-1號3樓
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function toggleMenu(){
+                let menu = document.getElementById("dropDownMenu");
+                menu.classList.toggle("dropdownBlock")
+            }
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.1.4/vue.global.min.js"></script>
+        <script>
+            Vue.createApp({
+                data(){
+                    return{
+
+                    }
+                },
+                methods:{
+
+                },
+                computed:{
+
+                },
+                mounted(){
+
+                }
+            }).mount('#app')
+        </script>
+    </body>
+</html>
